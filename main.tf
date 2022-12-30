@@ -16,9 +16,9 @@ provider "aws" {
 resource "aws_instance" "app_server" {
   ami           = "ami-0ecc74eca1d66d8a6"
   instance_type = "t2.micro"
-  key_name = "terraform"
+  key_name = "aws"
 
   tags = {
-    Name = "terraform primeira instancia"
+    Name = "terraform ansible python"
   }
 }
